@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Highlight Selector",
+  "version": "1.0.0",
+  "description": "A simple example for highlighting css selector",
+  "icons": {
+    "16": "images/logo.png",
+    "32": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Highlight Selector"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "file://*/*",
+    "contextMenus"
+  ]
+}
