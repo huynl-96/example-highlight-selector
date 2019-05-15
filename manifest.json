@@ -14,10 +14,13 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Highlight Selector"
+    "default_title": "Highlight Selector (off)"
   },
   "content_scripts": [{
-    "js": ["scripts/jquery-3.4.1.min.js"],
+    "js": [
+      "scripts/jquery-3.4.1.min.js",
+      "scripts/content.js"
+    ],
     "matches": ["http://*/*", "https://*/*"]
   }],
   "permissions": [
@@ -25,7 +28,8 @@
     "http://*/*",
     "https://*/*",
     "file://*/*",
-    "contextMenus"
+    "contextMenus",
+    "storage"
   ],
   "web_accessible_resources": [
     "styles/styles.css"
