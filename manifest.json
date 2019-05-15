@@ -16,11 +16,18 @@
   "browser_action": {
     "default_title": "Highlight Selector"
   },
+  "content_scripts": [{
+    "js": ["scripts/jquery-3.4.1.min.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
   "permissions": [
     "tabs",
     "http://*/*",
     "https://*/*",
     "file://*/*",
     "contextMenus"
+  ],
+  "web_accessible_resources": [
+    "styles/styles.css"
   ]
 }
